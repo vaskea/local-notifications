@@ -1,6 +1,6 @@
 {
   "name": "@vaskea/local-notifications",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The Local Notifications API provides a way to schedule device notifications locally (i.e. without a server sending push notifications).",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorLocalNotifications.podspec"
+    "VaskeaLocalNotifications.podspec"
   ],
   "author": "Ionic <hi@ionicframework.com>",
   "license": "MIT",
@@ -42,7 +42,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "publish:cocoapod": "pod trunk push ./CapacitorLocalNotifications.podspec --allow-warnings"
+    "publish:cocoapod": "pod trunk push VaskeaLocalNotifications.podspec --allow-warnings"
   },
   "devDependencies": {
     "@capacitor/android": "^3.0.0",
